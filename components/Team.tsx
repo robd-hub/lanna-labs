@@ -6,7 +6,7 @@ const TEAM = [
     photo: null,
   },
   {
-    name: "Christine Regalado",
+    name: "Crissy",
     title: "COO",
     bio: "Christine is the proud owner of Ayuri Beauty Salon and our flagship website Ayuribeauty.com. She is responsible for the successful running of Lanna Labs behind the scenes.",
     photo: "/christine.jpg",
