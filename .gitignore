@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code
+.claude/
+
+# scratch files
+screenshot.png
+lanna_labs_concept_2_double_l_monogram_white.html
+IMG_0351.jpg
+"Doi Inthanon.jpg"

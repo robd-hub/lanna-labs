@@ -1,21 +1,17 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import PrivacyHero from "@/components/PrivacyHero";
 import LogoBar from "@/components/LogoBar";
-import About from "@/components/About";
-import Team from "@/components/Team";
-import Services from "@/components/Services";
+import PrivacyContent from "@/components/PrivacyContent";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function PrivacyPage() {
   return (
     <main>
       <Navbar />
-      <Hero />
+      <PrivacyHero />
       <LogoBar />
-      <About />
-      <Team />
-      <Services />
+      <PrivacyContent />
       <CTA />
       <Footer />
     </main>

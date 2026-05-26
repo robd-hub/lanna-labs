@@ -1,21 +1,17 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import TermsHero from "@/components/TermsHero";
 import LogoBar from "@/components/LogoBar";
-import About from "@/components/About";
-import Team from "@/components/Team";
-import Services from "@/components/Services";
+import TermsContent from "@/components/TermsContent";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function TermsPage() {
   return (
     <main>
       <Navbar />
-      <Hero />
+      <TermsHero />
       <LogoBar />
-      <About />
-      <Team />
-      <Services />
+      <TermsContent />
       <CTA />
       <Footer />
     </main>

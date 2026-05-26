@@ -1,21 +1,19 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import AboutHero from "@/components/AboutHero";
 import LogoBar from "@/components/LogoBar";
 import About from "@/components/About";
 import Team from "@/components/Team";
-import Services from "@/components/Services";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <main>
       <Navbar />
-      <Hero />
+      <AboutHero />
       <LogoBar />
       <About />
       <Team />
-      <Services />
       <CTA />
       <Footer />
     </main>
