@@ -11,11 +11,9 @@ const STATS = [
 export default function Hero() {
   return (
     <section
-      className="relative flex w-full flex-col items-center justify-center px-6 text-center"
+      className="relative flex w-full flex-col items-center justify-center px-6 text-center pt-32 pb-16 md:pt-40 md:pb-16"
       style={{
         minHeight: "calc(80svh - 5em)",
-        paddingTop: "6em",
-        paddingBottom: "4em",
         fontSize: "1.25vw",
         fontWeight: 400,
         lineHeight: "130%",
