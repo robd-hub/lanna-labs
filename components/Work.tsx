@@ -5,7 +5,7 @@ const PROJECTS = [
   {
     name: "Ayuri Beauty",
     outcome: "Custom website for a Manila-based beauty salon",
-    href: "https://ayuribeauty.com",
+    href: "https://www.ayuribeauty.com/",
     image: "/work/ayuri-beauty.jpg",
   },
 ];
