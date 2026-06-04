@@ -58,9 +58,17 @@ export default function ServicesDetail() {
                 )}
               </div>
               {!s.available && (
-                <span className="shrink-0 rounded-full border border-border/60 px-3 py-1 text-xs text-muted">
-                  Coming soon
-                </span>
+                <div className="flex shrink-0 flex-col items-end gap-3">
+                  <span className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted">
+                    Coming soon
+                  </span>
+                  <a
+                    href="mailto:rob@lannalabs.com?subject=Interested in upcoming service"
+                    className="text-xs text-muted hover:text-foreground transition-colors"
+                  >
+                    Get notified →
+                  </a>
+                </div>
               )}
             </div>
           </div>

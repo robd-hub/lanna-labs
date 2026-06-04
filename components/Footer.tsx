@@ -3,6 +3,7 @@ import Link from "next/link";
 const FOUNDER_LINKS = [
   { label: "Instagram", href: "https://www.instagram.com/robdoughts/" },
   { label: "X / Twitter", href: "https://x.com/lannalabs" },
+  { label: "rob@lannalabs.com", href: "mailto:rob@lannalabs.com" },
 ];
 
 const COMPANY_LINKS = [
