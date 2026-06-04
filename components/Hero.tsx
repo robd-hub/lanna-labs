@@ -14,9 +14,6 @@ export default function Hero() {
       className="relative flex w-full flex-col items-center justify-center px-6 text-center pt-32 pb-16 md:pt-40 md:pb-16"
       style={{
         minHeight: "calc(80svh - 5em)",
-        fontSize: "1.25vw",
-        fontWeight: 400,
-        lineHeight: "130%",
         WebkitFontSmoothing: "antialiased",
         background: "radial-gradient(ellipse 80% 60% at 50% 40%, #1a1a2e 0%, #111113 70%)",
       }}
@@ -24,28 +21,34 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-4xl">
 
         <h1
-          className="font-semibold leading-tight text-foreground"
-          style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}
+          className="animate-fade-in-up font-semibold leading-tight text-foreground"
+          style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", animationDelay: "0ms" }}
         >
           Your best work deserves a better website.
         </h1>
 
-        <p className="mt-6 mx-auto max-w-2xl text-base text-muted leading-relaxed">
+        <p
+          className="animate-fade-in-up mt-6 mx-auto max-w-2xl text-base text-muted leading-relaxed"
+          style={{ animationDelay: "120ms" }}
+        >
           You&apos;ve put years into what you do. Your website should carry that same weight.
         </p>
 
         {/* Stats */}
-        <div className="mt-10 flex flex-wrap justify-center gap-x-12 gap-y-6">
+        <div
+          className="animate-fade-in-up mt-10 flex flex-wrap justify-center gap-x-12 gap-y-6"
+          style={{ animationDelay: "240ms" }}
+        >
           {STATS.map((s) => (
             <div key={s.label}>
-              <div className="text-2xl font-semibold text-foreground">{s.num}</div>
+              <div className="text-2xl font-semibold text-accent">{s.num}</div>
               <div className="mt-0.5 text-sm text-muted">{s.label}</div>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="mt-10">
+        <div className="animate-fade-in-up mt-10" style={{ animationDelay: "360ms" }}>
           <Link
             href="https://cal.com/rob-doughty-ffsaqo"
             target="_blank"

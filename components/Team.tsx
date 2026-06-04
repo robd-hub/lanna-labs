@@ -1,8 +1,8 @@
 const TEAM = [
   {
     name: "Rob Doughty",
-    title: "CEO / Talent",
-    bio: "Rob started Lanna Labs in 2026 after spending two years building websites for family and friends. The Lanna name was inspired from his favourite region of Thailand where he spends a lot of his time.",
+    title: "Founder",
+    bio: "Rob started Lanna Labs in 2026 after spending two years building websites for family and friends. The Lanna name was inspired by his favourite region of Thailand where he spends a lot of his time.",
     photo: null,
   },
   {
@@ -17,7 +17,7 @@ import Image from "next/image";
 
 export default function Team() {
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="team" className="py-24 px-6 bg-card">
       <div className="mx-auto max-w-5xl">
 
         {/* Centered header */}
@@ -44,11 +44,14 @@ export default function Team() {
                     src={member.photo}
                     alt={member.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover object-top"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center text-sm text-muted">
-                    [Photo]
+                  <div className="flex h-full w-full items-center justify-center">
+                    <span className="text-4xl font-semibold text-muted select-none tracking-tight">
+                      RD
+                    </span>
                   </div>
                 )}
               </div>

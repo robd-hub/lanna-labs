@@ -5,13 +5,10 @@ const FOUNDER_LINKS = [
   { label: "X / Twitter", href: "https://x.com/lannalabs" },
 ];
 
-const LEARN_LINKS = [
-  { label: "Case Studies", href: "#" },
-];
-
 const COMPANY_LINKS = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Work", href: "/#work" },
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Book a Call", href: "https://cal.com/rob-doughty-ffsaqo" },
 ];
@@ -28,7 +25,7 @@ export default function Footer() {
               Work with us
             </p>
             <p className="text-xl font-semibold text-foreground leading-snug max-w-sm">
-              Start with a free, thirty minute growth mapping call.
+              Start with a free, thirty minute call.
             </p>
             <a
               href="https://cal.com/rob-doughty-ffsaqo"
@@ -36,7 +33,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-3 rounded-full border border-foreground/20 px-5 py-3 text-sm font-medium text-foreground hover:bg-foreground hover:text-background transition-colors"
             >
-              Let&apos;s talk
+              Book a free call
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-foreground text-background text-xs">
                 →
               </span>
@@ -51,21 +48,6 @@ export default function Footer() {
               </p>
               <ul className="space-y-3">
                 {FOUNDER_LINKS.map((l) => (
-                  <li key={l.label}>
-                    <Link href={l.href} className="text-sm text-muted hover:text-foreground transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted">
-                Learn
-              </p>
-              <ul className="space-y-3">
-                {LEARN_LINKS.map((l) => (
                   <li key={l.label}>
                     <Link href={l.href} className="text-sm text-muted hover:text-foreground transition-colors">
                       {l.label}

@@ -5,6 +5,7 @@ const SERVICES = [
     description:
       "A custom website built from scratch to represent your business properly. Fast, mobile-friendly, and designed to convert visitors into customers.",
     available: true,
+    pricing: "Fixed price — scope in a free call",
   },
   {
     number: "02",
@@ -40,8 +41,8 @@ export default function ServicesDetail() {
             }`}
           >
             <div className="flex items-start justify-between gap-4">
-              <div>
-                <span className="text-xs font-medium text-muted">{s.number}</span>
+              <div className="flex-1">
+                <span className="text-xs font-semibold text-accent">{s.number}</span>
                 <h3
                   className={`mt-1 text-xl font-semibold ${
                     s.available ? "text-foreground" : "text-muted"
@@ -52,6 +53,9 @@ export default function ServicesDetail() {
                 <p className="mt-3 max-w-2xl text-sm text-muted leading-relaxed">
                   {s.description}
                 </p>
+                {s.pricing && (
+                  <p className="mt-4 text-xs font-medium text-accent">{s.pricing}</p>
+                )}
               </div>
               {!s.available && (
                 <span className="shrink-0 rounded-full border border-border/60 px-3 py-1 text-xs text-muted">

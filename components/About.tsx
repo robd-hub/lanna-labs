@@ -1,8 +1,12 @@
 import Image from "next/image";
 
-export default function About() {
+interface AboutProps {
+  full?: boolean;
+}
+
+export default function About({ full = false }: AboutProps) {
   return (
-    <section id="about" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="story" className="mx-auto max-w-7xl px-6 py-24">
       <div className="grid gap-16 md:grid-cols-2 md:items-center">
         {/* Text column */}
         <div>
@@ -20,10 +24,20 @@ export default function About() {
               values: craft, calm, and doing things properly.
             </p>
             <p>
-              Today Lanna Labs helps small and medium companies dramtically increase their online presence
-              and credibilty by creating high quality, agile websites using the latest design and technology.
-
+              Today Lanna Labs helps small and medium companies dramatically increase their online presence
+              and credibility by creating high quality, agile websites using the latest design and technology.
             </p>
+
+            {full && (
+              <>
+                <p>
+                  Every project runs on a fixed-price, fixed-scope model. Before any work begins you know exactly what you&apos;re getting, what it costs, and when it&apos;ll be done. No surprises, no scope creep, no mystery invoices.
+                </p>
+                <p>
+                  There are no account managers or handoffs here. You work directly with Rob — the same person on your first call is the same person who launches your site. That direct line is what keeps quality high and timelines short.
+                </p>
+              </>
+            )}
           </div>
         </div>
 
@@ -33,6 +47,7 @@ export default function About() {
             src="/thailand.jpg"
             alt="Doi Inthanon, Lanna region, Thailand"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover object-center"
           />
         </div>

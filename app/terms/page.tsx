@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+};
 import TermsHero from "@/components/TermsHero";
 import LogoBar from "@/components/LogoBar";
 import TermsContent from "@/components/TermsContent";
@@ -7,7 +12,7 @@ import Footer from "@/components/Footer";
 
 export default function TermsPage() {
   return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
       <Navbar />
       <TermsHero />
       <LogoBar />

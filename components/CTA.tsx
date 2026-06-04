@@ -16,7 +16,7 @@ export default function CTA() {
         </h2>
 
         <p className="mx-auto mt-6 max-w-xl text-base text-muted leading-relaxed">
-          Book a free 30-minute call. We&apos;ll talk through your business, look at what you have online today, and tell you exactly what we&apos;d do differently.
+          Book a free call. We&apos;ll talk through your business, look at what you have online today, and tell you exactly what we&apos;d do differently.
         </p>
 
       <a
@@ -25,12 +25,12 @@ export default function CTA() {
         rel="noopener noreferrer"
         className="mt-10 inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-80"
       >
-        Book a free 30-minute call
+        Book a free call
         <span className="flex h-7 w-7 items-center justify-center rounded-full bg-background text-foreground text-xs">
           →
         </span>
       </a>
-    </div>
-    </section >
+      </div>
+    </section>
   );
 }
