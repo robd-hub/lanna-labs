@@ -44,7 +44,7 @@ export default function ServicesDetail() {
               <div className="flex-1">
                 <span className="text-sm font-semibold text-accent">{s.number}</span>
                 <h3
-                  className={`mt-1 text-2xl font-semibold ${
+                  className={`mt-1 text-3xl font-semibold ${
                     s.available ? "text-foreground" : "text-muted"
                   }`}
                 >
