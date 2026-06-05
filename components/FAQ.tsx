@@ -51,7 +51,7 @@ export default function FAQ() {
               aria-expanded={open === i}
               onClick={() => setOpen(open === i ? null : i)}
             >
-              <span className="text-lg font-medium text-foreground">{item.q}</span>
+              <span className="text-xl font-medium text-foreground">{item.q}</span>
               <span
                 className="shrink-0 text-muted transition-transform duration-200"
                 style={{ transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}

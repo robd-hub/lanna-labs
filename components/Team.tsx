@@ -58,7 +58,7 @@ export default function Team() {
 
               {/* Info below card */}
               <div className="mt-5">
-                <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                <h3 className="text-2xl font-semibold text-foreground">{member.name}</h3>
                 <div className="mt-1 text-base text-muted">{member.title}</div>
                 <p className="mt-4 text-lg text-muted leading-loose">{member.bio}</p>
               </div>

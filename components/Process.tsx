@@ -37,7 +37,7 @@ export default function Process() {
         {STEPS.map((step) => (
           <div key={step.num} className="bg-card p-8">
             <p className="mb-4 text-sm font-semibold text-accent">{step.num}</p>
-            <h3 className="mb-3 text-lg font-semibold text-foreground">{step.title}</h3>
+            <h3 className="mb-3 text-xl font-semibold text-foreground">{step.title}</h3>
             <p className="text-base text-muted leading-relaxed">{step.body}</p>
           </div>
         ))}
