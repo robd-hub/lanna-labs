@@ -41,10 +41,10 @@ export default function Services() {
             className="rounded-2xl border border-border bg-card p-6 transition-colors hover:border-foreground/20"
           >
             <p className="mb-4 text-sm font-semibold text-accent">0{i + 1}</p>
-            <p className="mb-3 font-semibold text-foreground text-base leading-snug">
+            <p className="mb-3 font-semibold text-foreground text-lg leading-snug">
               {f.title}
             </p>
-            <p className="text-base text-muted leading-relaxed">{f.body}</p>
+            <p className="text-base text-muted leading-loose">{f.body}</p>
           </div>
         ))}
       </div>

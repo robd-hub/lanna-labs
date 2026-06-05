@@ -26,7 +26,7 @@ export default function Home() {
       <Team />
       <Services />
       <Process />
-      <CTA />
+<CTA />
       <Footer />
     </main>
   );

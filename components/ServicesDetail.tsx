@@ -42,29 +42,29 @@ export default function ServicesDetail() {
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
-                <span className="text-xs font-semibold text-accent">{s.number}</span>
+                <span className="text-sm font-semibold text-accent">{s.number}</span>
                 <h3
-                  className={`mt-1 text-xl font-semibold ${
+                  className={`mt-1 text-2xl font-semibold ${
                     s.available ? "text-foreground" : "text-muted"
                   }`}
                 >
                   {s.title}
                 </h3>
-                <p className="mt-3 max-w-2xl text-sm text-muted leading-relaxed">
+                <p className="mt-4 max-w-2xl text-base text-muted leading-loose">
                   {s.description}
                 </p>
                 {s.pricing && (
-                  <p className="mt-4 text-xs font-medium text-accent">{s.pricing}</p>
+                  <p className="mt-5 text-sm font-medium text-accent">{s.pricing}</p>
                 )}
               </div>
               {!s.available && (
                 <div className="flex shrink-0 flex-col items-end gap-3">
-                  <span className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted">
+                  <span className="rounded-full border border-border/60 px-3 py-1 text-sm text-muted">
                     Coming soon
                   </span>
                   <a
                     href="mailto:rob@lannalabs.com?subject=Interested in upcoming service"
-                    className="text-xs text-muted hover:text-foreground transition-colors"
+                    className="text-sm text-muted hover:text-foreground transition-colors"
                   >
                     Get notified →
                   </a>

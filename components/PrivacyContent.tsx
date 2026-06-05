@@ -47,10 +47,10 @@ export default function PrivacyContent() {
       <div className="space-y-12">
         {SECTIONS.map((s) => (
           <div key={s.title}>
-            <h2 className="mb-4 text-lg font-semibold text-foreground">{s.title}</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-foreground">{s.title}</h2>
             <div className="space-y-4">
               {s.content.split("\n\n").map((para, i) => (
-                <p key={i} className="text-sm text-muted leading-relaxed">
+                <p key={i} className="text-base text-muted leading-loose">
                   {para}
                 </p>
               ))}
