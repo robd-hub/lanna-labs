@@ -23,9 +23,9 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
+    <section className="mx-auto max-w-7xl px-6 py-28">
       <div className="mb-12">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
           How it works
         </p>
         <h2 className="text-3xl font-semibold text-foreground md:text-4xl">
@@ -36,9 +36,9 @@ export default function Process() {
       <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden">
         {STEPS.map((step) => (
           <div key={step.num} className="bg-card p-8">
-            <p className="mb-4 text-xs font-semibold text-accent">{step.num}</p>
+            <p className="mb-4 text-sm font-semibold text-accent">{step.num}</p>
             <h3 className="mb-3 text-lg font-semibold text-foreground">{step.title}</h3>
-            <p className="text-sm text-muted leading-relaxed">{step.body}</p>
+            <p className="text-base text-muted leading-relaxed">{step.body}</p>
           </div>
         ))}
       </div>

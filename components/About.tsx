@@ -6,7 +6,7 @@ interface AboutProps {
 
 export default function About({ full = false }: AboutProps) {
   return (
-    <section id="story" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="story" className="mx-auto max-w-7xl px-6 py-28">
       <div className="grid gap-16 md:grid-cols-2 md:items-center">
         {/* Text column */}
         <div>
@@ -14,7 +14,7 @@ export default function About({ full = false }: AboutProps) {
             Lanna Labs.
           </h2>
 
-          <div className="space-y-4 text-base text-muted leading-relaxed">
+          <div className="space-y-4 text-lg text-muted leading-loose">
             <p>
               Rob started Lanna Labs after noticing the same problem everywhere: small businesses doing great work, let down by the website representing them. He built the studio to close that gap.
             </p>

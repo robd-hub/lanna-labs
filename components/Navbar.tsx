@@ -38,11 +38,11 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2.5">
           <Image src="/logo-icon.svg" alt="Lanna Labs icon" width={32} height={32} />
-          <span className="text-foreground font-semibold text-sm tracking-tight">Lanna Labs</span>
+          <span className="text-foreground font-semibold text-base tracking-tight">Lanna Labs</span>
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8 text-sm text-muted">
+        <div className="hidden md:flex items-center gap-8 text-base text-muted">
           <Link href={servicesHref} className="hover:text-foreground transition-colors">
             Services
           </Link>
@@ -56,10 +56,10 @@ export default function Navbar() {
           href="https://cal.com/rob-doughty-ffsaqo"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-80"
+          className="hidden md:flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-base font-medium text-background transition-opacity hover:opacity-80"
         >
           Let&apos;s talk
-          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-background/20 text-xs">
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-background/20 text-sm">
             →
           </span>
         </Link>
@@ -108,11 +108,11 @@ export default function Navbar() {
             href="https://cal.com/rob-doughty-ffsaqo"
             target="_blank"
             rel="noopener noreferrer"
-            className="self-start inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-80"
+            className="self-start inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-base font-medium text-background transition-opacity hover:opacity-80"
             onClick={() => setMenuOpen(false)}
           >
             Let&apos;s talk
-            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-background/20 text-xs">
+            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-background/20 text-sm">
               →
             </span>
           </Link>

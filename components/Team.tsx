@@ -17,7 +17,7 @@ import Image from "next/image";
 
 export default function Team() {
   return (
-    <section id="team" className="py-24 px-6 bg-card">
+    <section id="team" className="py-28 px-6 bg-card">
       <div className="mx-auto max-w-5xl">
 
         {/* Centered header */}
@@ -25,7 +25,7 @@ export default function Team() {
           <h2 className="text-3xl font-semibold text-foreground md:text-4xl leading-tight">
             The people behind the work.
           </h2>
-          <p className="mt-4 mx-auto max-w-2xl text-base text-muted leading-relaxed">
+          <p className="mt-4 mx-auto max-w-2xl text-lg text-muted leading-loose">
             Lanna Labs is a small, focused studio built on a simple idea: every business deserves a website it can be proud of.
           </p>
         </div>
@@ -59,8 +59,8 @@ export default function Team() {
               {/* Info below card */}
               <div className="mt-5">
                 <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
-                <div className="mt-1 text-sm text-muted">{member.title}</div>
-                <p className="mt-4 text-sm text-muted leading-relaxed">{member.bio}</p>
+                <div className="mt-1 text-base text-muted">{member.title}</div>
+                <p className="mt-4 text-lg text-muted leading-loose">{member.bio}</p>
               </div>
             </div>
           ))}

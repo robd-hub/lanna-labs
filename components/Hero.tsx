@@ -28,7 +28,7 @@ export default function Hero() {
         </h1>
 
         <p
-          className="animate-fade-in-up mt-6 mx-auto max-w-2xl text-base text-muted leading-relaxed"
+          className="animate-fade-in-up mt-6 mx-auto max-w-2xl text-lg text-muted leading-loose"
           style={{ animationDelay: "120ms" }}
         >
           You&apos;ve put years into what you do. Your website should carry that same weight.
@@ -42,7 +42,7 @@ export default function Hero() {
           {STATS.map((s) => (
             <div key={s.label}>
               <div className="text-2xl font-semibold text-accent">{s.num}</div>
-              <div className="mt-0.5 text-sm text-muted">{s.label}</div>
+              <div className="mt-0.5 text-base text-muted">{s.label}</div>
             </div>
           ))}
         </div>
@@ -53,10 +53,10 @@ export default function Hero() {
             href="https://cal.com/rob-doughty-ffsaqo"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
+            className="inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3 text-base font-medium text-background transition-opacity hover:opacity-80"
           >
             Let&apos;s talk
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-background/20 text-xs">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-background/20 text-sm">
               →
             </span>
           </Link>

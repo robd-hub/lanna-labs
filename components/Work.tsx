@@ -12,10 +12,10 @@ const PROJECTS = [
 
 export default function Work() {
   return (
-    <section id="work" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="work" className="mx-auto max-w-7xl px-6 py-28">
       <div className="mb-12 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
             Work
           </p>
           <h2 className="text-3xl font-semibold text-foreground md:text-4xl">
@@ -44,9 +44,9 @@ export default function Work() {
               />
             </div>
             <div className="px-5 py-4">
-              <p className="font-semibold text-foreground text-sm">{project.name}</p>
-              <p className="mt-1 text-sm text-muted leading-relaxed">{project.outcome}</p>
-              <p className="mt-3 text-xs text-muted group-hover:text-foreground transition-colors">
+              <p className="font-semibold text-foreground text-base">{project.name}</p>
+              <p className="mt-1 text-base text-muted leading-loose">{project.outcome}</p>
+              <p className="mt-3 text-base text-muted group-hover:text-foreground transition-colors">
                 Visit site →
               </p>
             </div>
@@ -55,8 +55,8 @@ export default function Work() {
 
         {/* Placeholder card */}
         <div className="flex aspect-auto min-h-[200px] flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/40 px-8 py-12 text-center">
-          <p className="text-sm font-medium text-muted">More coming soon</p>
-          <p className="mt-2 text-xs text-muted/60">Next project in progress</p>
+          <p className="text-base font-medium text-muted">More coming soon</p>
+          <p className="mt-2 text-base text-muted/60">Next project in progress</p>
         </div>
       </div>
     </section>

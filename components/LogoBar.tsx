@@ -13,7 +13,7 @@ export default function LogoBar() {
   return (
     <section className="border-y border-border py-5 px-6" aria-label="Platforms we build with">
       <div className="flex items-center gap-8">
-        <p className="shrink-0 text-xs text-muted tracking-wide whitespace-nowrap" aria-hidden="true">
+        <p className="shrink-0 text-sm text-muted tracking-wide whitespace-nowrap" aria-hidden="true">
           Platforms we build with
         </p>
 
@@ -33,7 +33,7 @@ export default function LogoBar() {
             {[...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS].map((name, i) => (
               <span
                 key={i}
-                className="whitespace-nowrap text-sm font-medium text-muted tracking-wide pr-16"
+                className="whitespace-nowrap text-base font-medium text-muted tracking-wide pr-16"
               >
                 {name}
               </span>

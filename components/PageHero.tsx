@@ -18,7 +18,7 @@ export default function PageHero({ eyebrow, title, subtitle }: PageHeroProps) {
     >
       <div className="mx-auto w-full max-w-4xl">
         {eyebrow && (
-          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-accent">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">
             {eyebrow}
           </p>
         )}
@@ -29,7 +29,7 @@ export default function PageHero({ eyebrow, title, subtitle }: PageHeroProps) {
           {title}
         </h1>
         {subtitle && (
-          <p className="mt-6 mx-auto max-w-xl text-base text-muted leading-relaxed">
+          <p className="mt-6 mx-auto max-w-xl text-lg text-muted leading-loose">
             {subtitle}
           </p>
         )}

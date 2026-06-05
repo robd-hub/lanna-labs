@@ -21,14 +21,14 @@ const FEATURES = [
 
 export default function Services() {
   return (
-    <section id="services" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="services" className="mx-auto max-w-7xl px-6 py-28">
       <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <h2 className="text-3xl font-semibold text-foreground md:text-4xl">
           What we build, and why it matters.
         </h2>
         <Link
           href="/services"
-          className="shrink-0 text-sm text-muted hover:text-foreground transition-colors"
+          className="shrink-0 text-base text-muted hover:text-foreground transition-colors"
         >
           See all services →
         </Link>
@@ -40,11 +40,11 @@ export default function Services() {
             key={f.title}
             className="rounded-2xl border border-border bg-card p-6 transition-colors hover:border-foreground/20"
           >
-            <p className="mb-4 text-xs font-semibold text-accent">0{i + 1}</p>
-            <p className="mb-3 font-semibold text-foreground text-sm leading-snug">
+            <p className="mb-4 text-sm font-semibold text-accent">0{i + 1}</p>
+            <p className="mb-3 font-semibold text-foreground text-base leading-snug">
               {f.title}
             </p>
-            <p className="text-sm text-muted leading-relaxed">{f.body}</p>
+            <p className="text-base text-muted leading-relaxed">{f.body}</p>
           </div>
         ))}
       </div>
