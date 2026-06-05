@@ -23,7 +23,10 @@ export default function Services() {
   return (
     <section id="services" className="mx-auto max-w-7xl px-6 py-28">
       <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <h2 className="text-3xl font-semibold text-foreground md:text-4xl">
+        <h2
+          className="font-semibold text-foreground"
+          style={{ fontSize: "clamp(1.875rem, 3vw, 2.25rem)" }}
+        >
           What we build, and why it matters.
         </h2>
         <Link

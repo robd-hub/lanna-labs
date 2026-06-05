@@ -28,7 +28,10 @@ export default function Process() {
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
           How it works
         </p>
-        <h2 className="text-3xl font-semibold text-foreground md:text-4xl">
+        <h2
+          className="font-semibold text-foreground"
+          style={{ fontSize: "clamp(1.875rem, 3vw, 2.25rem)" }}
+        >
           From brief to live in four steps.
         </h2>
       </div>
