@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { motion, useReducedMotion } from "framer-motion";
 
 const FEATURES = [
   {
@@ -19,10 +21,28 @@ const FEATURES = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+};
+
 export default function Services() {
+  const reduced = useReducedMotion();
+
   return (
     <section id="services" className="mx-auto max-w-7xl px-6 py-28">
-      <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <motion.div
+        className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
+        initial={reduced ? false : { opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
         <h2
           className="font-semibold text-foreground"
           style={{ fontSize: "clamp(1.875rem, 3vw, 2.25rem)" }}
@@ -35,12 +55,19 @@ export default function Services() {
         >
           See all services →
         </Link>
-      </div>
+      </motion.div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <motion.div
+        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        variants={reduced ? undefined : containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-60px" }}
+      >
         {FEATURES.map((f, i) => (
-          <div
+          <motion.div
             key={f.title}
+            variants={reduced ? undefined : cardVariants}
             className="rounded-2xl border border-border bg-card p-6 transition-colors hover:border-foreground/20"
           >
             <p className="mb-4 text-sm font-semibold text-accent">0{i + 1}</p>
@@ -48,9 +75,9 @@ export default function Services() {
               {f.title}
             </p>
             <p className="text-base text-muted leading-loose">{f.body}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

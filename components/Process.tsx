@@ -1,3 +1,6 @@
+"use client";
+import { motion, useReducedMotion } from "framer-motion";
+
 const STEPS = [
   {
     num: "01",
@@ -21,10 +24,28 @@ const STEPS = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+};
+
 export default function Process() {
+  const reduced = useReducedMotion();
+
   return (
     <section className="mx-auto max-w-7xl px-6 py-28">
-      <div className="mb-12">
+      <motion.div
+        className="mb-12"
+        initial={reduced ? false : { opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
           How it works
         </p>
@@ -34,17 +55,27 @@ export default function Process() {
         >
           From brief to live in four steps.
         </h2>
-      </div>
+      </motion.div>
 
-      <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden">
+      <motion.div
+        className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden"
+        variants={reduced ? undefined : containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-60px" }}
+      >
         {STEPS.map((step) => (
-          <div key={step.num} className="bg-card p-8">
+          <motion.div
+            key={step.num}
+            variants={reduced ? undefined : cardVariants}
+            className="bg-card p-8"
+          >
             <p className="mb-4 text-sm font-semibold text-accent">{step.num}</p>
             <h3 className="mb-3 text-xl font-semibold text-foreground">{step.title}</h3>
             <p className="text-base text-muted leading-relaxed">{step.body}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

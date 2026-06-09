@@ -14,6 +14,7 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import AnimateIn from "@/components/AnimateIn";
 
 export default function Home() {
   return (
@@ -21,12 +22,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <LogoBar />
-      <Work />
-      <About />
-      <Team />
+      <AnimateIn><Work /></AnimateIn>
+      <AnimateIn><About /></AnimateIn>
+      <AnimateIn><Team /></AnimateIn>
       <Services />
       <Process />
-<CTA />
+      <CTA />
       <Footer />
     </main>
   );
