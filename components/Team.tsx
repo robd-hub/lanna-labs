@@ -3,7 +3,7 @@ const TEAM = [
     name: "Rob Doughty",
     title: "Founder",
     bio: "Rob started Lanna Labs in 2026 after spending two years building websites for family and friends. The Lanna name was inspired by his favourite region of Thailand where he spends a lot of his time.",
-    photo: "/rob.jpg",
+    photo: null,
   },
   {
     name: "Crissy",
